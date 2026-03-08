@@ -30,8 +30,8 @@ function ContactForm() {
                   ViKi Global Tech Solutions is committed to empowering entrepreneurs through 
                   scalable SaaS and AI-driven industrial safety solutions.
                 </p>
-                <h3 className="text-dark font-bold h5 mb-2">Primary Headquarters</h3>
-                <p className="text-secondary mb-4">New York, NY (Serving Global Clients)</p>
+                <h3 className="text-dark font-bold h5 mb-2">Primary Head Office</h3>
+                <p className="text-secondary mb-4">Navi Mumbai, Maharashtra, India (Serving Global Clients)</p>
                 <h4 className="text-blue-600">
                   <span className="font-bold text-dark">Email:</span> admin@viki-gts.com<br />
                   <span className="font-bold text-dark">Support:</span> +91 7272 88 3030
