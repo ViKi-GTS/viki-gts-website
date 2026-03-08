@@ -1,11 +1,10 @@
 export default function ITConsultingDetail() {
   return (
     <main className="consulting-service">
-      {/* Hero Section */}
-      <section className="bg-blue-50 py-24 border-bottom">
+      <section className="bg-light py-24 border-bottom">
         <div className="container text-center">
-          <h1 className="text-5xl font-extrabold text-slate-900">IT Consulting & API Integration</h1>
-          <p className="mt-6 text-xl text-slate-600 max-w-2xl mx-auto">
+          <h1 className="text-5xl font-extrabold text-dark">IT Consulting & API Integration</h1>
+          <p className="mt-6 text-xl text-secondary max-w-2xl mx-auto">
             Strategic roadmaps and technical connectivity to unify your digital ecosystem.
           </p>
         </div>
@@ -55,12 +54,13 @@ export default function ITConsultingDetail() {
         </div>
       </section>
 
-      {/* Universal Demo/Consultation Section */}
-      <section className="padding bg-blue-700 text-white text-center">
+     {/* FIXED CONSULTATION BUTTON SECTION */}
+      <section className="padding bg-primary text-center">
         <div className="container">
-          <h2 className="font-bold text-3xl mb-4">Need a Strategic Roadmap?</h2>
-          <p className="text-lg opacity-90 mb-8">Let’s audit your current IT infrastructure and find the path to 10x efficiency.</p>
-          <a href="/contact?type=consultation" className="default-btn bg-white text-blue-700 hover:bg-slate-100 px-12 py-4">
+          <h2 className="text-white font-bold text-3xl mb-4">Need a Strategic Roadmap?</h2>
+          <p className="text-white text-lg mb-8 opacity-90">Let’s audit your infrastructure and find the path to 10x efficiency.</p>
+          {/* High-contrast button */}
+          <a href="/contact?type=consultation" className="default-btn btn-dark">
             Book a Free Consultation
           </a>
         </div>
