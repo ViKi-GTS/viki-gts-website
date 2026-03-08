@@ -12,7 +12,7 @@ export default function Home() {
               <div id="mainmenu" className="mainmenu">
                 <ul className="nav">
                   <li><a className="nav-link active" href="/">Home</a></li>
-                  <li><a href="#about">About</a></li>
+                  <li><a href="about">About</a></li>
                   <li><a href="/services">Services</a></li>
                   <li><a href="#projects">Case Studies</a></li>
                   <li><a href="#contact">Contact</a></li>
