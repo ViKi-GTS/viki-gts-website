@@ -33,8 +33,8 @@ function ContactForm() {
                 <h3 className="text-dark font-bold h5 mb-2">Primary Headquarters</h3>
                 <p className="text-secondary mb-4">New York, NY (Serving Global Clients)</p>
                 <h4 className="text-blue-600">
-                  <span className="font-bold text-dark">Email:</span> contact@viki-gts.com<br />
-                  <span className="font-bold text-dark">Support:</span> 24/7 Digital Consultation
+                  <span className="font-bold text-dark">Email:</span> admin@viki-gts.com<br />
+                  <span className="font-bold text-dark">Support:</span> +91 7272 88 3030
                 </h4>
               </div>
             </div>
