@@ -17,13 +17,13 @@ export default function ServicesPage() {
       desc: "Expert guidance on digital transformation and seamless system integration.",
       icon: "sb-hours",
       link: "/services/it-consulting"
-    }
+    },
     {
       title: "Cloud Migration",
       desc: "Moving legacy systems to secure cloud environments with zero downtime.",
       icon: "sb-chart",
       link: "/services/cloud-migration"
-    },
+    }
   ];
 
   return (
