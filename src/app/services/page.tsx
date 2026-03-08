@@ -7,12 +7,6 @@ export default function ServicesPage() {
       link: "/services/saas-development"
     },
     {
-      title: "Cloud Migration",
-      desc: "Moving legacy systems to secure cloud environments with zero downtime.",
-      icon: "sb-chart",
-      link: "/services/cloud-migration"
-    },
-    {
       title: "Automation & AI",
       desc: "Deploying intelligent models for industrial safety and fintech fraud detection.",
       icon: "sb-stats",
@@ -24,6 +18,12 @@ export default function ServicesPage() {
       icon: "sb-hours",
       link: "/services/it-consulting"
     }
+    {
+      title: "Cloud Migration",
+      desc: "Moving legacy systems to secure cloud environments with zero downtime.",
+      icon: "sb-chart",
+      link: "/services/cloud-migration"
+    },
   ];
 
   return (
@@ -49,7 +49,7 @@ export default function ServicesPage() {
 
       <section className="padding bg-grey">
         <div className="container">
-          <div className="row g-4"> {/* g-4 adds uniform spacing between cards */}
+          <div className="row g-3"> {/* g-3 adds uniform spacing between cards */}
             {services.map((service, index) => (
               <div key={index} className="col-lg-3 col-md-6">
                 <a 
