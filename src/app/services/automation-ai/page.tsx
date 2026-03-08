@@ -86,6 +86,23 @@ export default function AutomationAIDetail() {
           </div>
         </div>
       </section>
+
+      {/* Demo Request Section */}
+      <section className="padding bg-blue-700 text-white">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-lg-8">
+              <h2 className="font-bold text-4xl mb-2">Ready to see Viki-Secure in action?</h2>
+              <p className="text-xl opacity-90">Schedule a 15-minute live demo of our AI Face Recognition or Insurance Claim Engine.</p>
+            </div>
+            <div className="col-lg-4 text-lg-right mt-4 mt-lg-0">
+              <a href="/contact?subject=DemoRequest" className="default-btn bg-white text-blue-700 hover:bg-slate-100">
+                Book a Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
