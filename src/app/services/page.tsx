@@ -4,7 +4,7 @@ export default function ServicesPage() {
       title: "Custom SaaS Solutions",
       desc: "Building scalable, user-friendly software for housing societies, healthcare, and education.",
       icon: "sb-target",
-      link: "/services/saas-development" // Matches our new folder
+      link: "/services/saas-development"
     },
     {
       title: "Cloud Migration",
@@ -28,55 +28,43 @@ export default function ServicesPage() {
 
   return (
     <div className="services-page">
-      {/* HEADER (Re-used from Home) */}
-      <header className="header-section shadow-sm">
+      <header className="header-section shadow-sm bg-white">
         <div className="container">
-          <nav className="navbar">
+          <nav className="navbar py-4">
             <a href="/" className="navbar-brand">
-              <h2 className="text-blue-600 font-bold">VIKI GTS</h2>
+              <h2 className="text-blue-600 font-bold mb-0">VIKI GTS</h2>
             </a>
           </nav>
         </div>
       </header>
 
-      {/* SERVICES HERO */}
-      <section className="page-header padding">
-        <div className="container text-center">
+      <section className="page-header padding bg-dark text-white text-center">
+        <div className="container">
           <h1 className="text-4xl font-bold">Our Services</h1>
-          <p className="max-w-2xl mx-auto mt-4">
+          <p className="max-w-2xl mx-auto mt-4 opacity-80">
             We offer customized digital transformation services that drive efficiency and social impact globally.
           </p>
         </div>
       </section>
 
-      {/* SERVICES GRID */}
       <section className="padding bg-grey">
         <div className="container">
-          <div className="row">
+          <div className="row g-4"> {/* g-4 adds uniform spacing between cards */}
             {services.map((service, index) => (
-              <div key={index} className="col-lg-3 col-sm-6 sm-padding">
-                <div className="promo-item text-center p-6 bg-white rounded shadow-sm">
-                  <i className={`sb ${service.icon} text-blue-500 text-3xl`}></i>
-                  <h3 className="mt-4 font-bold">{service.title}</h3>
-                  <p className="mt-2 text-gray-600">{service.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="padding bg-grey">
-        <div className="container">
-          <div className="row">
-            {services.map((service, index) => (
-              <div key={index} className="col-lg-3 col-sm-6 sm-padding">
-                {/* Wrap the content in an 'a' tag to make it clickable */}
-                <a href={service.link} className="promo-item text-center p-6 bg-white rounded shadow-sm hover:shadow-lg transition-all block no-underline text-dark">
-                  <i className={`sb ${service.icon} text-blue-500 text-3xl`}></i>
-                  <h3 className="mt-4 font-bold">{service.title}</h3>
-                  <p className="mt-2 text-gray-600">{service.desc}</p>
-                  <span className="text-blue-600 font-semibold mt-4 block">Learn More →</span>
+              <div key={index} className="col-lg-3 col-md-6">
+                <a 
+                  href={service.link} 
+                  className="promo-item text-center p-4 bg-white rounded shadow-sm hover:shadow-lg transition-all no-underline text-dark d-flex flex-column h-100"
+                  style={{ minHeight: '350px' }} // Ensures all cards are uniform height
+                >
+                  <div className="mb-4">
+                    <i className={`sb ${service.icon} text-blue-500 text-4xl`}></i>
+                  </div>
+                  <h3 className="font-bold text-xl mb-3">{service.title}</h3>
+                  <p className="text-gray-600 flex-grow-1 mb-4">{service.desc}</p>
+                  <div className="mt-auto">
+                    <span className="text-blue-600 font-semibold">Learn More →</span>
+                  </div>
                 </a>
               </div>
             ))}
@@ -84,9 +72,8 @@ export default function ServicesPage() {
         </div>
       </section>
       
-      {/* FOOTER */}
-      <footer className="footer-section bg-dark py-10 text-center text-white">
-        <p>© {new Date().getFullYear()} Viki Global Tech Solutions</p>
+      <footer className="footer-section bg-dark py-5 text-center text-white">
+        <p className="mb-0">© {new Date().getFullYear()} Viki Global Tech Solutions</p>
       </footer>
     </div>
   );
