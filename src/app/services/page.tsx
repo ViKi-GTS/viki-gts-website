@@ -3,22 +3,26 @@ export default function ServicesPage() {
     {
       title: "Custom SaaS Solutions",
       desc: "Building scalable, user-friendly software for housing societies, healthcare, and education.",
-      icon: "sb-target"
+      icon: "sb-target",
+      link: "/services/saas-development" // Matches our new folder
     },
     {
       title: "Cloud Migration",
-      desc: "Moving legacy systems (like power plant logs or insurance records) to secure cloud environments.",
-      icon: "sb-chart"
+      desc: "Moving legacy systems to secure cloud environments with zero downtime.",
+      icon: "sb-chart",
+      link: "/services/cloud-migration"
     },
     {
       title: "Automation & AI",
-      desc: "Integrating face recognition and AI models to detect claim mismatches and optimize workforce tracking.",
-      icon: "sb-stats"
+      desc: "Deploying intelligent models for industrial safety and fintech fraud detection.",
+      icon: "sb-stats",
+      link: "/services/automation-ai"
     },
     {
-      title: "API & IT Consulting",
-      desc: "Expert guidance on digital transformation and seamless integration of third-party business tools.",
-      icon: "sb-hours"
+      title: "IT Consulting & API",
+      desc: "Expert guidance on digital transformation and seamless system integration.",
+      icon: "sb-hours",
+      link: "/services/it-consulting"
     }
   ];
 
@@ -56,6 +60,24 @@ export default function ServicesPage() {
                   <h3 className="mt-4 font-bold">{service.title}</h3>
                   <p className="mt-2 text-gray-600">{service.desc}</p>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="padding bg-grey">
+        <div className="container">
+          <div className="row">
+            {services.map((service, index) => (
+              <div key={index} className="col-lg-3 col-sm-6 sm-padding">
+                {/* Wrap the content in an 'a' tag to make it clickable */}
+                <a href={service.link} className="promo-item text-center p-6 bg-white rounded shadow-sm hover:shadow-lg transition-all block no-underline text-dark">
+                  <i className={`sb ${service.icon} text-blue-500 text-3xl`}></i>
+                  <h3 className="mt-4 font-bold">{service.title}</h3>
+                  <p className="mt-2 text-gray-600">{service.desc}</p>
+                  <span className="text-blue-600 font-semibold mt-4 block">Learn More →</span>
+                </a>
               </div>
             ))}
           </div>
